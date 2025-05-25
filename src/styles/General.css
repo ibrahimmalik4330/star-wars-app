@@ -1,0 +1,23 @@
+body {
+  background-color: #1c1c1c;
+  color: #d0d0d0;
+  margin: 0;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-list-container {
+  border: 2px solid #d4af37;
+  display: grid;
+  vertical-align: middle;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #292929;
+  border-radius: 20px;
+}

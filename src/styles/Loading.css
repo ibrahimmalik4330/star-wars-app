@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: none;
+  color: yellow;
+  font-family: "Orbitron", sans-serif;
+  text-align: center;
+}
+
+.lightsaber {
+  width: 100%;
+  height: 15px;
+  background: gray;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.blade {
+  width: 0%;
+  height: 10px;
+  background: red;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  border-radius: 5px;
+  box-shadow: 0 0 15px red;
+  animation: extendBlade 1.5s infinite alternate ease-in-out;
+}
+
+@keyframes extendBlade {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.loading-text {
+  margin-top: 10px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  animation: flicker 1.5s infinite alternate;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}

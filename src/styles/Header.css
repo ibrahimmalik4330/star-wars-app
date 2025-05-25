@@ -1,0 +1,36 @@
+.header {
+  background-image: url("../assets/header-background 1.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  height: 300px;
+
+  margin-bottom: 10px;
+}
+
+.logo-name {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 0px;
+}
+
+.logo-img {
+  margin-bottom: 0px;
+}
+
+@font-face {
+  font-family: "Star Jedi";
+  src: url("../assets/fonts/Starjedi.ttf") format("truetype");
+}
+
+.logo-text {
+  position: absolute;
+  color: #ffe401;
+  font-size: 20px;
+  bottom: -5px;
+  left: 65px;
+  font-family: "Star Jedi", sans-serif;
+}

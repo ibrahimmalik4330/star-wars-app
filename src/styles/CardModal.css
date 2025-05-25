@@ -1,0 +1,120 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #292929;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 80%;
+  max-height: 80%;
+  overflow: hidden;
+  position: relative;
+  border: 2px solid #d4af37;
+}
+
+.modal-frame {
+  height: 600px;
+  width: 400px;
+  background-color: #292929;
+  display: flex;
+  flex-direction: column;
+  vertical-align: top;
+  justify-content: flex-start;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+}
+
+.modal-character-name {
+  width: 400px;
+  background: linear-gradient(45deg, #b8860b, #ffd700, #ffcc00, #b8860b);
+  background-size: 200% 200%;
+  border-radius: 300px;
+  text-align: center;
+  font-family: "Star Jedi", sans-serif;
+  color: #000;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+  animation: shine 3s infinite linear;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.character-info {
+  border: 2px solid #d4af37;
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffc500;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 400;
+  font-size: large;
+  margin-bottom: 20px;
+}
+
+.home-world-heading {
+  width: 400px;
+  background-color: #ffc500;
+  background: linear-gradient(45deg, #b8860b, #ffd700, #ffcc00, #b8860b);
+  background-size: 200% 200%;
+  border-radius: 300px;
+  text-align: center;
+  font-family: "Star Jedi", sans-serif;
+  color: #000;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+  animation: shine 3s infinite linear;
+}
+.home-world-info {
+  border: 2px solid #d4af37;
+  border-radius: 8px;
+  padding: 10px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  row-gap: 0;
+  color: #ffc500;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 400;
+  font-size: large;
+  min-height: 170px;
+}
+
+.character-info p,
+.home-world-info p {
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  text-align: center;
+  max-width: 100%;
+  margin: 8px;
+}
+
+.home-world-loading-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+}

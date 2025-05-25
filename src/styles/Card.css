@@ -1,0 +1,30 @@
+.card-frame {
+  height: 350px;
+  width: 250px;
+  background-color: #ffc500;
+  border: 2px solid #d4af37;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 25px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.character-img-container {
+  height: 300px;
+  width: 200px;
+}
+
+.character-img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 6px;
+}
+.character-name {
+  text-align: center;
+  font-family: "Star Jedi", sans-serif;
+  color: #000;
+}
