@@ -1,6 +1,6 @@
 import CardList from "../components/CardList";
 import Header from "../components/Header";
-import "../styles/General.css";
+import "../styles/Global.css";
 import Pagination from "../components/Pagination";
 
 function Home() {
